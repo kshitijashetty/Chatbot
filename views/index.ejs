@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      var userName = "<%= userName%>";
+      var userId = "<%= userId%>";
+      window.webchatMethods = {
+        // called at each user message
+        getMemory: (conversationId) => {
+          const memory = { userName: userName, userId: userId }
+          return { memory, merge: true }
+        }
+      }
+     console.log(userName);
+    </script>
+  </head>
+  <body>
+    <script src="https://cdn.cai.tools.sap/webchat/webchat.js"
+    channelId="53f2a05e-e3c8-45d4-b97e-ff62ab72ad11"
+    token="6b10de01200d299348f6a5df59735345"
+    id="cai-webchat"
+    ></script>
+  </body>
+</html>
