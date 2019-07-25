@@ -8,7 +8,7 @@
       window.webchatMethods = {
         // called at each user message
         getMemory: (conversationId) => {
-          const memory = { userName: userName, userId: userId }
+          const memory = { userName: userName, uName: uName, tCode: tCode }
           return { memory, merge: true }
         }
       }
