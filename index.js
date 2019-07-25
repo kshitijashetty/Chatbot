@@ -13,8 +13,9 @@ app.set('views', __dirname + "/views");
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  userName = req.query.name;
-  userId = req.query.id;
+  userName = req.query.username;
+  uName = req.query.uname;
+  tCode = req.query.tcode
   res.render("index", {userName: userName, userId: userId});
 })	
 
