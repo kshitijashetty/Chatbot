@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   userName = req.query.username;
   uName = req.query.uname;
   tCode = req.query.tcode
-  res.render("index", {userName: userName, userId: userId});
+  res.render("index", {userName: userName, uName: uName, tCode : tCode});
 })	
 
 // app.post('/', (req, res) => {
